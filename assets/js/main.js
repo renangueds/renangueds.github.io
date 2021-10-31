@@ -39,7 +39,7 @@ sr.reveal('.home__title',{})
 sr.reveal('.home__subtitle',{delay: 100})
 sr.reveal('.home__cidade',{delay: 150})
 sr.reveal('.button',{delay: 200})
-sr.reveal('.home__img',{delay: 400})
+sr.reveal('.home__img',{interval: 400})
 sr.reveal('.home__social-icon',{interval: 400})
 
 /* scroll about */
@@ -59,5 +59,6 @@ sr.reveal('.skills__img',{delay: 400})
 sr.reveal('.work__contents',{interval: 100})
 sr.reveal('.work__img',{interval: 200})
 /* scroll contact */
-sr.reveal('.contact__input',{interval: 200})
+sr.reveal('.subtitle',{interval: 200})
+sr.reveal('.contact__text',{interval: 200})
 

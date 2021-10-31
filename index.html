@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="assets/icons/style.css"/>
+
   <link rel="stylesheet" href="assets/css/style.css">
   <link href='https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css' rel='stylesheet'>
   <title>Portfólio - Renan Guedes</title>
@@ -34,24 +38,34 @@
   <main class="l-main">
     <!-- **** home **** -->
     <section class="home bd-grid" id="home">
-      <div class="home__data">
-        <h1 class="home__title">Renan<br></h1>
-        <h2 class="home__subtitle">Desenvolvedor <br>Web</h2>
-        <h3 class="home__cidade">São Paulo, SP</h3><br>
+
+        
+        <div class="home__content">
+          <div class="home__data">
+            <h1 class="home__title">Renan<br></h1>
+            <h2 class="home__subtitle">Desenvolvedor <br>Web</h2>
+            <h3 class="home__cidade">São Paulo, SP</h3><br>
+          </div>          
+          <div class="home__social">
+            <a href="https://github.com/renangueds" title="GitHub" class="home__social-icon" target="_blank"><i class='bx bxl-github'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/renangueds/" title="LinkedIn" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://wa.me/5511911111989" class="home__social-icon" target="_blank"><i title="WhatsApp" class='bx bxl-whatsapp'></i>
+            </a>
+          </div>
       
-      <div class="home__social">
-        <a href="https://github.com/renangueds" title="GitHub" class="home__social-icon" target="_blank"><i
-            class='bx bxl-github'></i></a>
-        <a href="https://www.linkedin.com/in/renangueds/" title="LinkedIn" class="home__social-icon" target="_blank"><i
-            class='bx bxl-linkedin'></i></a>
-        <a href="https://wa.me/5511911111989" class="home__social-icon" target="_blank"><i title="WhatsApp"
-            class='bx bxl-whatsapp'></i></a>
-      </div>      
-      <div class="home__img bd-grid">
-        <img src="assets/img/foto-perfil-original.png" title="Renan Guedes" alt="Foto Principal Perfil Renan">
-      </div>      
-    </div>    
+        </div>
+
+        <div class="home__img">
+          <img src="assets/img/foto-perfil-original.png" title="Renan Guedes" alt="Foto Principal Perfil Renan">
+        </div>
+
+
+           
+     
     </section>
+    
     <!--===== sobre ===== -->
     <section class="about section" id="about">
       <h2 class="section-title">Sobre</h2>
@@ -60,7 +74,7 @@
           <img src="assets/img/avatar-renan-fundo-preto-about.png" alt="">
         </div>
         <div>
-          <h2 class="about__subtitle">Renan Guedes</h2>
+          <h2 class="subtitle">Renan Guedes</h2>
           <p class="about__text">Sou estudante de Análise e Desenvolvimento de Sistemas na Universidade Paulista e do curso de Web Moderno na Udemy. Adoro codificar pois é onde posso criar coisas novas e resolver problemas. Sempre busquei fazer algo que me preenchesse como profissional e sinto a programação inflar dentro mim. Sou fascinado por saber como as coisas funcionam e adoro vê-las funcionando. Busco sempre estar em constante movimento e evolução. As pessoas são minhas fontes de conhecimento e inspiração, acredito que o compartilhamento de experiências é fundamental para o crescimento profissional de cada indivíduo.
           </p>
         </div>
@@ -71,40 +85,60 @@
       <h2 class="section-title">Habilidades</h2>
       <div class="skills__container bd-grid">
         <div>
-          <h2 class="skills__subtitle">Habilidades profissionais</h2>
+          <h2 class="subtitle">Habilidades profissionais</h2>
           <p class="skills__text">Possuo habilidades em HTML5, CSS3 e estou aprofundando meus conhecimentos em JavaScript. Tenho facilidade com algoritmos e lógica de programação e também estou familiarizado com a plataforma GitHub.
           </p>
-          <div class="skills__data">
-            <div class="skills__names">
-              <i class='bx bxl-html5 skills__icon'></i>
-              <span class="skills__name">HTML5</span>
+          <div class="skills__data__list">
+
+            <div class="skills__data">
+              <div class="skills__names">
+                <i class='bx bxl-html5 skills__icon'></i>
+                <span class="skills__name">HTML5</span>
             </div>
-            <div>
-              <span class="skills__percentage">95%</span>
-            </div>
-            <div class="skills__bar skills__html"></div>
+            
+            <div class="skills__bar skills__line"></div>
           </div>
           <div class="skills__data">
             <div class="skills__names">
               <i class='bx bxl-css3 skills__icon'></i>
               <span class="skills__name">CSS3</span>
             </div>
-            <div>
-              <span class="skills__percentage">65%</span>
-            </div>
-            <div class="skills__bar skills__css"></div>
+            
+            <div class="skills__bar skills__line"></div>
           </div>
           <div class="skills__data">
             <div class="skills__names">
               <i class='bx bxl-javascript skills__icon'></i>
-              <span class="skills__name">JAVASCRIPT</span>
-            </div>
-            <div>
-              <span class="skills__percentage">10%</span>
-            </div>
-            <div class="skills__bar skills__js"></div>
+              <span class="skills__name">Javascript</span>
+            </div>            
+            <div class="skills__bar skills__line"></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-github skills__icon'></i>
+              <span class="skills__name">GitHub</span>
+            </div>            
+            <div class="skills__bar skills__line"></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-react skills__icon' ></i>
+              <span class="skills__name">React</span>
+            </div>            
+            <div class="skills__bar skills__line"></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-angular skills__icon' ></i>
+              <span class="skills__name">Angular</span>
+            </div>            
+            <div class="skills__bar skills__line"></div>
           </div>
         </div>
+      </div>
         <div class="skills__img">
           <img src="assets/img/programer.gif" alt="">
         </div>
@@ -114,8 +148,9 @@
     <section class="work section" id="work">
       <h2 class="section-title">Projetos</h2>
       <div class="work__container bd-grid">
+
         <div class="work__img">
-          <a href="vans/vans.html" target="_blank"><img src="assets/img/projeto-1.png" alt=""></a>
+          <a href="vans/vans.html" target="_blank"><img src="assets/img/projeto-1.png" alt="Print-Screen home site Vans Brasil"></a>
         </div>
         <div class="work__contents">
           <p>
@@ -123,15 +158,12 @@
             páginas do site. O próximo passo desse projeto será aplicar responsividade também para celulares.
           </p>
         </div>
-        <div class="work__img work__gif">
-          <div class="work__gif">
-            <div class="work-gif">
-              <img src="assets/img/projeto-2.gif" alt="">
-            </div>
-          </div>
+        <div class="work__img">
+          <a href="rocketseat-beauty-saloon/beautySaloon.html" target="_blank">
+            <img src="assets/img/projeto-2.png" alt="Print-Screen home site Beauty Saloon">   </a>
         </div>
         <div class="work__contents">
-          <p>NOVO PROJETO EM DESENVOLVIMENTO</p>
+          <p>Esse projeto foi elaborado durante conteúdo prático Mission: Origin da Rocketseat. Nesse projeto foi elaborado um site para um salão de beleza e omo desafio foi pedido para deixar o site responsivo. Além do desafio proposto eu criei um código no JS para mudar a cor do botão back-to-top para que ele não fique da mesma cor do footer, assim ele muda para uma cor clara dando mais visibilidade ao botão. Foram feitas também modificações no layout da seção Serviços para o site se adaptar melhor aos tablets. Procurei nesse projeto manter um código organizado e comentado para melhor compreensão de cada passo seguido no projeto.</p>
         </div>
       </div>
     </section>
@@ -139,14 +171,23 @@
     <section class="contact section" id="contact">
       <h2 class="section-title">Contato</h2>
       <div class="contact__container bd-grid">
-        <form action="" class="contact__form">
-          <input type="text" placeholder="Nome" class="contact__input">
-          <input type="mail" placeholder="Email" class="contact__input">
-          <textarea name="" id="" cols="0" rows="10"
-            placeholder="Contato em desenvolvimento, me chama no WhatsApp ou LinkedIn =)"
-            class="contact__input"></textarea>
-          <input type="button" value="Enviar" class="contact__button button">
-        </form>
+<div class="contact__content">
+
+  <h2 class="subtitle">Entre em contado!</h2>
+  <div class="contact__text">
+    <p>
+     Se você está em busca de um site novo ou a procura de um integrante para sua equipe, contate-me!!
+    </p>
+  </div>
+  
+  <a
+  href="https://api.whatsapp.com/send?phone=5511911111989&text=Olá, gostaria de agendar um horário."
+  target="_blank"
+  class="button"
+  ><i class="icon-whatsapp"></i>WhatsApp</a
+</div>
+    
+        
       </div>
     </section>
   </main>
