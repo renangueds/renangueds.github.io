@@ -34,31 +34,32 @@ const sr = ScrollReveal({
   reset: true
 })
 
+
+
 /* scrool home */
 sr.reveal('.home__title',{})
 sr.reveal('.home__subtitle',{delay: 100})
 sr.reveal('.home__cidade',{delay: 150})
 sr.reveal('.button',{delay: 200})
-sr.reveal('.home__img',{interval: 400})
-sr.reveal('.home__social-icon',{interval: 400})
+sr.reveal('.home__img',{interval: 300})
+sr.reveal('.home__social-icon',{interval: 300})
 
 /* scroll about */
-sr.reveal('.about__img',{})
-sr.reveal('.about__subtitle',{delay:200})
-sr.reveal('.about__text',{delay:400})
+sr.reveal(' .section-title ', {delay:100})
+sr.reveal('.text',{delay: 300})
 
 /* scroll skills */
-sr.reveal('.skills__subtitle',{})
-sr.reveal('.skills__text',{delay: 200})
+sr.reveal('.subtitle ',{})
+sr.reveal('.text',{delay: 200})
 sr.reveal('.skills__data',{interval: 200})
-sr.reveal('.skills__img',{delay: 400})
+sr.reveal('.skills__img',{delay: 300})
 
 
 /* scroll work */
-
 sr.reveal('.work__contents',{interval: 100})
 sr.reveal('.work__img',{interval: 200})
+
 /* scroll contact */
-sr.reveal('.subtitle',{interval: 200})
-sr.reveal('.contact__text',{interval: 200})
+sr.reveal('.subtitle ',{interval: 100})
+sr.reveal('.contact__text',{interval: 100})
 
