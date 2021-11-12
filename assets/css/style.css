@@ -352,29 +352,12 @@ img {
   cursor: pointer;
 }
 
-.work-text {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.95);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .5s, visibility .2s;
-  padding: .5rem;
-}
-
 .work-img:hover img {
   transform: scale(1.05);
 }
 
-.work-img:hover .work-text {  
-  visibility: visible;
-  opacity: 1;  
+.work-text {
+  display: none;
 }
 
 .contact-container {
@@ -390,14 +373,14 @@ img {
   box-shadow: 0 4px 25px rgba(14, 36, 10, 0.1);
 }
 
-.button:hover {
-  background-color: var(--five-color);
+.button-whatsapp:hover {
+  background-color: var(--five-color);  
+  color: var(--second-color);
 }
 
 .button-whatsapp i {
   margin-right: 1rem;
 }
-
 
 .footer {
   background-color: var(--four-color);
@@ -633,6 +616,26 @@ img {
     max-width: 1300px;
   }
 
+  .work-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s, visibility .2s;
+    padding: .5rem;
+  }
+
+  .work-img:hover .work-text {  
+    visibility: visible;
+    opacity: 1;  
+  }
 
   .skills-data-list {
     margin: 0;
