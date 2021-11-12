@@ -18,7 +18,7 @@
 
 :root {
   --body-font-family: 'Zen Kaku Gothic Antique', sans-serif;
-  --font-size-title-home: 4rem;
+  --font-size-title-home: 3rem;
   --normal-font-family: "poppins", sans-serif;
   --normal-font-size: 1rem;
   --title-font-size: 1.5rem;
@@ -34,6 +34,12 @@
     --normal-font-size: 1.1rem;
     --title-font-size: 2rem;
     --subtitle-font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px),(min-device-height:1024px) {
+  :root {
+  --font-size-title-home: 6rem;
   }
 }
 
@@ -159,6 +165,10 @@ img {
     background-color: var(--four-color);
     transition: 0.5s;
   }  
+  .home-title {
+    font-size:var(--font-size-title-home);  
+    line-height: 4rem;
+  }
   
   .work-text {  
     margin: 1rem 0 2rem 0;
@@ -233,7 +243,6 @@ img {
   flex-direction: column;
   align-items: flex-end;
   text-align: left;
-  margin-top: -2rem;
 }
 
 .home-title {
@@ -252,17 +261,19 @@ img {
   margin-bottom: 5rem;
 }
 
+
 .home-social-icon {
   display: block;
   font-size: 1.5rem;
   color: var(--second-color);
   align-self: center;  
-  margin-top: var(--mb-3);
+  margin-bottom: var(--mb-3);
 }
 
 .home-social-icon:hover {
     color: var(--five-color);
 }
+
 
 .about-img{
   justify-self: center;
@@ -417,8 +428,8 @@ img {
 }
 
 .back-to-top {
-  background: var(--third-color);
-  color: var(--second-color);
+  background: var(--second-color);
+  color: var(--four-color);
   position: fixed;
   right: 1rem;
   bottom: 1rem;
@@ -441,9 +452,20 @@ img {
 }
 
 .back-to-top.show.add {
-  background: var(--second-color);
-  color: var(--four-color);
+  background: var(--five-color);
+  color: var(--second-color);
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
   body {
@@ -522,6 +544,7 @@ img {
     display: inline-block;
     flex-direction: row;
     align-content: space-between;
+    right: 0;
   }
 
   .home-cidade {
@@ -593,6 +616,12 @@ img {
     margin-bottom: 5rem;
   }
   
+  .home-title{
+    font-size: var(--font-size-title-home);
+    color: var(--second-color);
+  }
+
+  
   .home-social {    
     margin-top: -87vh;
     margin-left: 0;
@@ -638,11 +667,11 @@ img {
   .bd-grid {
     max-width: 1300px;
   }
-
-
-  .home-social {    
-    align-self:flex-start;
+  .home {
+    max-width: 1300px;
   }
+
+  
 }
 
 
@@ -659,7 +688,6 @@ img {
     margin-top: -75vh;
     display: flex;
     flex-direction: row;
-    align-self:flex-start;
   
   } 
   
