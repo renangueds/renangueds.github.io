@@ -130,24 +130,6 @@ img {
   font-weight: var(--font-semi);
 }
 
-.button {
-  display: inline-block;
-  background-color: var(--four-color);
-  color: var(--second-color);
-  padding: 0.75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 25px rgba(14, 36, 10, 0.1);
-}
-
-.button i {
-  margin-right: 1rem;
-}
-
-.button:hover {
-  background-color: var(--five-color);
-}
-
 .text {
   color: var(--third-color);
   line-height: 2;
@@ -284,7 +266,6 @@ img {
 }
 .about-img img {
   width: 250px;
-  border-radius: .5rem;
 }
 
 .about-container {  
@@ -321,7 +302,6 @@ img {
   font-weight: var(--font-semi);
   padding: 0.5rem 1rem;
   margin-bottom: var(--mb-4);
-  border-radius: .5rem 0 0 0;
   box-shadow: 0 4px 25px rgba(14, 36, 10, 0.2);
   max-width: 100%;
   background-color: var(--second-color);
@@ -363,13 +343,12 @@ img {
   justify-self: center;
   box-shadow: 0 4px 25px rgba(14, 36, 10, 0.2);
   overflow: hidden;
-  border-radius: .5rem 0 0 0;
   cursor: pointer;
 }
 
 .work-img img {  
   position: relative;
-  transition: .1s;
+  transition: .3s;
   cursor: pointer;
 }
 
@@ -402,6 +381,23 @@ img {
   display: flex;
   padding: 8rem 0;
 }
+.button-whatsapp {
+  display: inline-block;
+  background-color: var(--four-color);
+  color: var(--second-color);
+  padding: 0.75rem 2.5rem;
+  font-weight: var(--font-semi);
+  box-shadow: 0 4px 25px rgba(14, 36, 10, 0.1);
+}
+
+.button:hover {
+  background-color: var(--five-color);
+}
+
+.button-whatsapp i {
+  margin-right: 1rem;
+}
+
 
 .footer {
   background-color: var(--four-color);
@@ -676,6 +672,12 @@ img {
   .nav {
     font-size: 20px;
   }
+  
+.button-whatsapp i {
+  vertical-align: middle;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
 
   .back-to-top { 
     right: 1.5rem;
