@@ -90,6 +90,3 @@ window.onload = function () {
       activateMenuAtCurrentSection()
   })
 }
-
-
-

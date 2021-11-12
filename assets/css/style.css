@@ -23,13 +23,29 @@
   --normal-font-size: 1rem;
   --title-font-size: 1.5rem;
   --subtitle-font-size: 2.5rem;
+  --icon-font-size: 1.5rem;
+
 }
 
 @media screen and (min-width: 768px) {
   :root {
     --body-font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    --font-size-title-home: 6rem;
+    --font-subtitle-home: 10rem;
+    --normal-font-family: "poppins", sans-serif;
+    --normal-font-size: 1.1rem;
+    --title-font-size: 2rem;
+    --subtitle-font-size: 2.5rem;
+    
+  --icon-font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  :root {
+    --body-font-family: 'Zen Kaku Gothic Antique', sans-serif;
     --font-size-title-home: 10rem;
-    --font-subtitle-home: 6rem;
+    --font-subtitle-home: 10rem;
     --normal-font-family: "poppins", sans-serif;
     --normal-font-size: 1.1rem;
     --title-font-size: 2rem;
@@ -37,11 +53,7 @@
   }
 }
 
-@media screen and (min-width: 768px),(min-device-height:1024px) {
-  :root {
-  --font-size-title-home: 6rem;
-  }
-}
+
 
 :root {
   --mb-1: 0.5rem;
@@ -264,7 +276,7 @@ img {
 
 .home-social-icon {
   display: block;
-  font-size: 1.5rem;
+  font-size: var(--icon-font-size);
   color: var(--second-color);
   align-self: center;  
   margin-bottom: var(--mb-3);
@@ -319,7 +331,7 @@ img {
 }
 
 .skills-icon {
-  font-size: 2rem;
+  font-size: var(--icon-font-size);
   margin-right: var(--mb-2);
   color: var(--five-color);
 }
@@ -414,7 +426,7 @@ img {
 }
 
 .footer-icon {
-  font-size: 1.5rem;
+  font-size: var(--icon-font-size);
   color: var(--second-color);
   margin: 0 var(--mb-2);
 }
@@ -455,17 +467,6 @@ img {
   background: var(--five-color);
   color: var(--second-color);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 768px) {
   body {
@@ -559,8 +560,9 @@ img {
   }  
 
   .home-social-icon {
-    font-size: 1.5rem;
+    font-size: var(--icon-font-size);
     margin-right: 2rem;
+    margin-bottom: 0;    
   }
 
   .about-container {
@@ -620,20 +622,27 @@ img {
     font-size: var(--font-size-title-home);
     color: var(--second-color);
   }
-
   
   .home-social {    
-    margin-top: -87vh;
+    margin-top: -92vh;
     margin-left: 0;
     display: flex;
     flex-direction: column;
     align-self:flex-start;
   }
+  .home-social-icon {
+    margin-top: 1rem;
+    font-size: var();
+  }
 }
 
 @media (min-width: 1024px) {  
+  .bd-grid,
+  .home {
+    max-width: 1300px;
+  }
   .home-social {    
-    margin-top: -66vh;
+    padding-top: 9rem;
     display: flex;
     flex-direction: row;
   }
@@ -660,20 +669,48 @@ img {
     margin-left: var(--mb-6);
     margin-bottom: 0;
   } 
-
 }
 
-@media screen and (min-width: 1366px) {
-  .bd-grid {
-    max-width: 1300px;
+@media screen and (min-width: 1200px),(min-device-height:1080px){
+  .display-home {
+    margin-top: 6rem;
   }
+
+  .home-title {
+    margin-left: 1rem;
+  }
+
+  .home-social  {    
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1366px){
   .home {
     max-width: 1300px;
   }
 
-  
-}
+  .home-title{
+    font-size: var(--font-size-title-home);
+    color: var(--second-color);
+  }
 
+  .display-home {
+    margin-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .home-title {
+    margin-bottom: 3rem;
+  }
+
+  .home-social {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+  } 
+}
 
 @media screen and (min-width: 1920px) {
   .home {
@@ -681,19 +718,18 @@ img {
   }
 
   .home-data{
-    margin-top: -2rem;
+    margin-top: -1rem;
   }
- 
-  .home-social {
-    margin-top: -75vh;
-    display: flex;
-    flex-direction: row;
-  
-  } 
-  
+
   .home-title{
     font-size: var(--font-size-title-home);
   }
+
+  .home-social {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 4rem;
+  } 
 
   .nav-item {
     font-size: 1rem;
@@ -702,12 +738,12 @@ img {
   .nav {
     font-size: 20px;
   }
-  
-.button-whatsapp i {
+
+  .button-whatsapp i {
   vertical-align: middle;
   margin-right: 1rem;
   font-size: 1.5rem;
-}
+  }
 
   .back-to-top { 
     right: 1.5rem;
