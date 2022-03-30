@@ -1,0 +1,155 @@
+.classics {
+	position: relative;
+	margin-top: 1.5rem;
+	margin-bottom: 7.5rem;
+	font-family: var(--font-fg-condensed);
+	background: url(../img-home/background-classics.webp) repeat-x center / cover;
+}
+.classics::before {
+	content: '';
+	background-image: url(../img-home/bg-checkerboard-schutz-2022-08-version.webp);
+	background-size: cover;
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	top: -50px;
+	left: 0;
+}
+.classics::after {
+	content: '';
+	background-image: url(../img-home/bg-checkerboard-schutz-2022-08-version.webp);
+	background-size: cover;
+	position: absolute;
+	height: 50px;
+	width: 100%;
+	bottom: -50px;
+	left: 0;
+}
+.swiper-button-prev-classics {
+	display: block;
+	position: absolute;
+	top: 45%;
+	left: 0;
+	z-index: 2;
+}
+.swiper-button-next-classics {
+	display: block;
+	position: absolute;
+	top: 45%;
+	right: 0;
+	z-index: 2;
+}
+.classics__card--chamada {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3.5rem;
+}
+.card__botao--qual-classic {
+	align-self: center;
+	justify-content: center;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--preto);
+	padding: 0.625rem 1.125rem 0 1rem;
+	color: white;
+}
+.card__botao--qual {
+	font-family: var(--font-condensed);
+	font-size: 1.65rem;
+}
+.card__botao--classic {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+.card__button {
+	color: var(--branco);
+	text-align: center;
+	font-size: 1.15rem;
+	font-weight: bold;
+	background: #000;
+	width: fit-content;
+	margin: 0.625rem auto 0 auto;
+	padding: 0.5rem 1rem 0.25rem 1rem;
+}
+.classics__card--tenis {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0.5rem 0 2rem 0;
+}
+.card-tenis:hover .button-tenis {
+	background: var(--vermelho);
+	transition: 0.3s;
+}
+.classics__card--tenis img {
+	width: 60vw;
+	display: flex;
+	align-self: center;
+	vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+	.card__qual-classic {
+		margin-top: 0.5rem;
+	}
+	.classics__card--tenis {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 0 3rem 0;
+	}
+	.classics__card--tenis img {
+		width: 32.875vw;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.classics {
+		margin-bottom: 4rem;
+	}
+	.classics__card--tenis img {
+		width: 21.7125rem;
+	}
+	.card__qual-classic {
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.classics {
+		margin-bottom: 4rem;
+	}
+	.classics__card--tenis img {
+		width: 15rem;
+	}
+	.card__qual-classic {
+		margin-top: 1rem;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.classics {
+		margin: 5rem 0 7rem 0;
+	}
+	.classics__slides {
+		max-width: 1400px;
+		margin: 0 auto;
+	}
+	.swiper-button-prev-classics,
+	.swiper-button-next-classics {
+		display: none;
+	}
+	.card__veja-todos {
+		display: flex;
+		justify-content: center;
+		padding-top: 2rem;
+		margin-top: 2rem;
+	}
+	.classics__card--tenis {
+		margin: 1rem 0.5rem 1.5rem 0.5rem;
+	}
+	.classics__card--tenis img {
+		width: 100%;
+	}
+}

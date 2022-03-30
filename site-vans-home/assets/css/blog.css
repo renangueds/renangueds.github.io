@@ -1,0 +1,140 @@
+.blog {
+	margin: 1rem 1rem 0 1.25rem;
+	font-family: var(--font-fg-condensed);
+}
+.blog__title {
+	font-size: 1.625rem;
+}
+.lista-blog {
+	display: flex;
+	flex-direction: column;
+	margin-top: 1.5rem;
+}
+.display-blog {
+	margin-bottom: 1.4rem;
+}
+.display-blog:last-child {
+	margin-bottom: 0;
+}
+.blog-img {
+	width: 100%;
+}
+.content-event {
+	display: flex;
+	justify-content: space-between;
+}
+.tipo-evento {
+	font-family: var(--title-main);
+	font-size: 14px;
+	font-weight: bold;
+	color: rgb(0, 112, 225);
+}
+.data-evento {
+	font-family: var(--title-main);
+	font-size: 14px;
+	font-weight: bold;
+	color: rgb(89, 89, 89);
+}
+.title-event p {
+	overflow: hidden;
+	text-decoration: underline;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	padding: 0.25rem 0;
+	letter-spacing: 0.015rem;
+	font-size: 1.125rem;
+}
+.description-event {
+	font-family: var(--title-main);
+	font-size: 12px;
+	color: rgb(89, 89, 89);
+	font-weight: bold;
+	line-height: 1rem;
+	letter-spacing: 0.04rem;
+}
+.button-mais-posts {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin-top: 0.75rem;
+}
+.button-blog {
+	background-color: var(--cinza-escuro);
+	color: #fff;
+	padding: 1rem 1.5rem 0.75rem 1.5rem;
+	font-family: var(--font-title);
+	font-weight: bold;
+	align-self: center;
+}
+.quadriculado {
+	background-image: url('../img-home/bg-checkerboard-schutz-2022-08-version-unit.webp');
+	height: 35px;
+	margin-bottom: 1.5rem;
+}
+.compre-na-vans {
+	font-family: var(--font-he-light);
+	font-size: 0.875rem;
+	text-align: center;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+	.blog {
+		margin: 2rem 1.25rem 0 1.25rem;
+	}
+	.lista-blog {
+		box-sizing: border-box;
+		display: flex;
+		flex-direction: row;
+		margin-top: 3.375rem;
+	}
+	.display-blog {
+		min-width: 0;
+		width: 100%;
+		margin-right: 1.25rem;
+	}
+	.display-blog:last-child {
+		margin-right: 0;
+	}
+	.blog-img img {
+		width: 100%;
+	}
+	.button-mais-posts {
+		margin-top: 1.75rem;
+		padding-bottom: 2.5rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.blog__title {
+		font-size: 2.375rem;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.compre-na-vans {
+		font-size: 0.7rem;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.quadriculado {
+		max-width: 1400px;
+		height: 35px;
+		margin-bottom: 1rem;
+	}
+	.blog {
+		margin: 2rem auto 0 auto;
+		padding: 0;
+		max-width: 1400px;
+		box-sizing: border-box;
+	}
+	.lista-blog {
+		justify-content: space-evenly;
+	}
+	.display-blog {
+		margin-right: initial;
+		width: calc(100% / 3 - 4rem);
+	}
+}
