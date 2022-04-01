@@ -1,0 +1,23 @@
+.location-bar {
+	background-color: var(--cinza-claro);
+	padding: 1rem 0;
+	text-align: center;
+}
+
+.location-bar i {
+	text-decoration: underline;
+	vertical-align: middle;
+	font-weight: bold;
+	font-family: var(--font-fg-condensed);
+	font-size: 0.937rem;
+}
+
+.icon-location {
+	font-size: 1.3rem;
+}
+
+@media screen and (min-width: 1025px) {
+	.location-bar {
+		display: none;
+	}
+}

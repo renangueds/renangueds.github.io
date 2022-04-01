@@ -100,6 +100,7 @@ img {
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
+  width: 100%;
 }
 
 .bd-grid {
@@ -138,6 +139,7 @@ img {
   font-weight: var(--font-semi);
   border-radius: 0.5rem;
   box-shadow: 0 4px 25px rgba(14, 36, 10, 0.1);
+  margin-bottom: 2rem;
 }
 
 .button i {
@@ -232,46 +234,46 @@ img {
 
 .home {
   max-width: 1024px;
-  width: calc(100% - 2rem);
-  margin-left: auto;
-  margin-right: auto;
+  padding: 2rem 1rem;
+  
+  width: 0 auto;
+  height: 80vh;
+  color: var(--second-color);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100vh - 5rem);
-  color: var(--second-color);
 }
+
 
 .home-data{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  text-align: left;
-  margin-top: -2rem;
 }
 
-.home-title {
-  font-size:var(--font-size-title-home);  
-  line-height: 4rem;
+.home-title{
+  font-size: 4rem;
+  line-height: 5rem;
+  align-self: center;
 }
 
 .home-cidade {
   font-size: var(--cidade-font-size);
   writing-mode: vertical-rl;
-  margin-top: 2rem;
+  align-self: flex-start;  
 }
 
 .home-social {
-  margin-left: 20rem;
-  margin-bottom: 5rem;
-}
-
-.home-social-icon {
-  display: block;
-  font-size: 1.5rem;
-  color: var(--second-color);
-  align-self: center;  
+   flex-direction: column;
+   display: flex;
+  }
+  
+  .home-social-icon {
+    font-size: 1.5rem;
+    color: var(--second-color);
+    align-self: flex-end;  
   margin-top: var(--mb-3);
+  
 }
 
 .home-social-icon:hover {
@@ -365,6 +367,7 @@ img {
   overflow: hidden;
   border-radius: .5rem 0 0 0;
   cursor: pointer;
+  align-self: flex-start;
 }
 
 .work-img img {  
@@ -374,33 +377,18 @@ img {
 }
 
 .work-text {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.95);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .5s, visibility .2s;
-  padding: .5rem;
-}
-
-.work-img:hover img {
-  transform: scale(1.05);
-}
-
-.work-img:hover .work-text {  
-  visibility: visible;
-  opacity: 1;  
+  color: var(--third-color);
+  font-size: 1.1rem;
+  margin-top: .5rem;
 }
 
 .contact-container {
   display: flex;
-  padding: 8rem 0;
+}
+
+.contact-item{
+  padding: 2rem .5rem;
+  text-align: center;
 }
 
 .footer {
@@ -442,7 +430,7 @@ img {
 }
 
 .back-to-top {
-  background: var(--third-color);
+  background: var(--four-color);
   color: var(--second-color);
   position: fixed;
   right: 1rem;
@@ -470,6 +458,7 @@ img {
   color: var(--four-color);
 }
 
+
 @media (min-width: 768px) {
   body {
     margin: var(--header-height) 0 0 0;
@@ -480,7 +469,7 @@ img {
     background-position: top;
     background-repeat: no-repeat;
   }
-
+  
   .bd-grid {
     align-items: center;
     margin-left: auto;
@@ -489,9 +478,16 @@ img {
 
   .section {
     padding-top: rem;
-    padding-bottom: 3rem;
+    padding-bottom: 4rem;
   }
-
+  
+  .home {
+    height: 90vh;
+  }
+  .home-title{
+    font-size: 7rem;
+    line-height: 7rem;
+  }
   .nav {
     height: calc(var(--header-height) + 1rem);
   }
@@ -514,52 +510,7 @@ img {
     color: var(--third-color);
   } 
   
-  .home {      
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-top: 3rem;
-    margin-bottom: 2rem;
-  }
-
-  .home-data{
-    margin-top: 0;
-  }
-
-  .display-home{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 12rem;
-  }
-
-  .home-title {
-    font-size: 9rem;  
-    line-height: 11rem;
-  }
-
-  .home-content{    
-    display: inline-block;
-    flex-direction: row;
-    align-content: space-between;
-  }
-
-  .home-cidade {
-    writing-mode: vertical-lr;
-  }
-
-  .home-social {
-    margin-bottom: -7rem;
-    display: flex;
-    flex-direction: row;
-    align-self:flex-start;
-  }  
-
-  .home-social-icon {
-    font-size: 1.5rem;
-    margin-right: 2rem;
-  }
+  /*  */
 
   .about-container {
     grid-template-columns: repeat(2, 1fr);
@@ -581,12 +532,18 @@ img {
     justify-items: center;
   }
 
-  .contact-content p {
-    max-width: 50vw;
+  .contact-content {
+    display: flex;
+    text-align: center;
   }
+
+  .contact-item{
+    padding: 0 2rem;
+  }
+
 }
 
-@media (min-width: 768px),(min-device-height:1024px) {
+/* @media (min-width: 768px),(max-device-height:1024px) {
   .home{
     margin-top: -10vh;
     margin-bottom: 5rem;
@@ -599,22 +556,42 @@ img {
     flex-direction: column;
     align-self:flex-start;
   }
-}
+} */
 
 @media (min-width: 1024px) {  
-  .home-social {    
-    margin-top: -66vh;
-    display: flex;
+.home {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+}
+
+
+  .home-cidade {
+    grid-column:1 / span 1 ;
+    font-size: var(--cidade-font-size);
+    align-self: flex-end;
+    
+    justify-self: flex-start;
+    padding-bottom: 3rem;
+  }
+
+  .home-data{
+    grid-column:2 / span 1 ;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-content: end;
+    margin: 0 auto;
+  }
+
+  .home-social{    
+    grid-row:2 / span 1 ;
+    
+    align-self: center;
     flex-direction: row;
   }
 
-  .home-social-icon {
-    width: max-content;
-  }  
-
-  .home-cidade {
-    font-size: var(--cidade-font-size);
-    writing-mode: vertical-rl;
+  .home-social-icon{
+    padding-right: 1rem;
   }
 
   .nav {
@@ -630,21 +607,42 @@ img {
     margin-left: var(--mb-6);
     margin-bottom: 0;
   } 
+
+  .work-text {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .5s, visibility .2s;
+  padding: 0 .5rem;
+  margin-top: initial;
+}
+
+.work-img:hover img {
+  transform: scale(1.05);
+}
+
+.work-img:hover .work-text {  
+  visibility: visible;
+  opacity: 0.9;  
+  background-color: black;
+}
 }
 
 @media screen and (min-width: 1366px) {
-  .bd-grid {
-    max-width: 1300px;
-  }
+
 
 
   .skills-data-list {
     margin: 0;
   }
 
-  .home-social {    
-    align-self:flex-start;
-  }
 }
 
 
@@ -655,6 +653,7 @@ img {
 
   .home-data{
     margin-top: -2rem;
+
   }
  
   .home-social {

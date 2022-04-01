@@ -1,0 +1,176 @@
+
+
+ 
+main{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3rem 1rem;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.personal-data{
+    text-align: center;
+}
+
+.personal-data__name{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.personal-data__name--first-name{    
+    line-height: 3rem;
+    font-size: 4rem;
+
+}
+.personal-data__name--last-name{
+    font-size: 3.5rem;
+
+}
+
+.personal-data__contact a{
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    color: #888;
+    text-decoration: none;
+}
+
+.objective{
+    display: flex; 
+    justify-content: center;
+    margin-top: 1rem;
+    color: steelblue;
+    text-align: center;
+}
+
+.objective__title {    
+    margin: 0 3rem;   
+    text-transform: uppercase;
+    font-size: 1.825rem;
+    font-weight: 700;
+}
+.objective__line{
+    width: 15vw;
+    border-bottom: 1px solid ;
+    align-self: center;
+}
+
+.curriculum__content{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    /* grid-template-rows: 1fr 1fr; */
+}
+
+.curriculum__title{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.curriculum__item{
+    padding-top: 2rem;
+}
+
+
+.item__date{
+    color: #5b98e2;
+    max-width: 20%;
+    padding-right: 1rem;
+}
+
+.item__content{
+    max-width: 70%;
+    box-sizing: border-box;
+}
+
+
+.education{
+    grid-column: 1 / span 1;
+    box-sizing: border-box;
+}
+
+.education__content--course{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #999;
+}
+
+.education__content--school{
+    font-size: 1.4rem;
+}
+
+.education__item{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.education__item:first-child{
+    margin-top: 1rem;
+}
+
+.skills{    
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+    background-color: #c6d9f1;
+    padding: 3rem 1rem;
+}
+
+.skills__item{
+    margin-bottom: 2rem;
+}
+
+.skills__list{
+    margin-top: 1rem;
+}
+
+.skills__text{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.experience{
+    grid-column: 1 / span 1;
+}
+
+
+.experience__item{
+    display: flex;
+    margin-bottom: 2rem;
+
+}
+
+.experience__content{    
+    width: 100%;
+}
+
+.experience__item:first-child {
+    margin-top: 1rem;
+}
+
+.experience__content--title{
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.experience__content--ocupation{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #999;
+}
+.experience__content--text{
+    font-size: 1.2rem;
+    color: #777;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .curriculum__content{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
