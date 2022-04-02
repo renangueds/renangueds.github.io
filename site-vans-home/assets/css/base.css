@@ -1,0 +1,60 @@
+@font-face {
+	font-family: ITCFranklinGothicStd-DmCd;
+	src: url('../fonts/ITCFranklinGothicStd-DmCd.otf');
+}
+@font-face {
+	font-family: HelvetivaNeueLight;
+	src: url('../fonts/HelvetivaNeueLight.otf');
+}
+@font-face {
+	font-family: HelveticaNeueMedium;
+	src: url('../fonts/HelveticaNeueMedium.otf');
+}
+@font-face {
+	font-family: HelveticaNeueBold;
+	src: url('../fonts/HelveticaNeueBold.ttf');
+}
+@font-face {
+	font-family: Franklin Gothic Light SSi Light;
+	src: url('../fonts/Franklin\ Gothic\ Light\ SSi\ Light.ttf');
+}
+:root {
+	--branco: #fff;
+	--cinza-claro: #e4e4e4;
+	--cinza-medio: #3e3e3e;
+	--cinza-escuro: #1c1c1c;
+	--azul: #589bc6;
+	--vermelho: #c00909;
+	--preto: #000;
+	--font-fg-light: 'Franklin Gothic Light SSi Light';
+	--font-fg-condensed: 'ITCFranklinGothicStd-DmCd', Arial, sans-serif;
+	--font-he-light: 'HelvetivaNeueLight';
+	--font-he-medium: 'HelveticaNeueMedium';
+	--font-he-bold: 'HelveticaNeueBold';
+}
+main {
+	padding-top: 64px;
+}
+.title {
+	display: block;
+	font-family: var(--font-fg-condensed);
+	text-align: center;
+	text-transform: uppercase;
+}
+.list__blue {
+	font-family: var(--font-fg-light);
+	color: #85bee3;
+	font-size: 14px;
+}
+.list__blue--header {
+	font-family: var(--font-fg-condensed);
+	color: #85bee3;
+	font-size: 13px;
+	margin-top: 0.5rem;
+}
+@media screen and (min-width: 1025px) {
+	main {
+		padding-top: 86px;
+		box-sizing: border-box;
+	}
+}

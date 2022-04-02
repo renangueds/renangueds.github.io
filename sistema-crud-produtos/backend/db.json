@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy S21 Ultra",
+      "price": 6334.00
+      
+    },
+    {
+      "id": 2,
+      "name": "Samsung Galaxy S20 FE",
+      "price": 2110.00
+    },
+    {
+      "id": 3,
+      "name": "Sansung S21+",
+      "price": 7520.89
+    },
+    {
+      "id": 4,
+      "name": "Apple iPhone 12 mini",
+      "price": 4184.00
+
+    },
+    {
+      "id": 5,
+      "name": "Samsung Galaxy Note 20 Ultra",
+      "price": 4831.00
+    
+    }
+  ]
+}

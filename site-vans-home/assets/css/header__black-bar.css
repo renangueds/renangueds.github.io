@@ -1,0 +1,9 @@
+.carrossel-bar--item {
+	font-family: var(--font-he-light);
+	background-color: var(--cinza-escuro);
+	color: var(--branco);
+	font-size: 0.9rem;
+	line-height: 1rem;
+	text-align: center;
+	padding: 0.75rem 1rem;
+}
