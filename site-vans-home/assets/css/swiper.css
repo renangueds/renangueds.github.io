@@ -1,0 +1,22 @@
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
+}
+.icon-cheveron-right,
+.icon-cheveron-left {
+	color: black !important;
+	font-size: 2.5rem;
+	box-sizing: border-box;
+}
+.icon-chevron-thin-right,
+.icon-chevron-thin-left {
+	color: var(--cinza-claro);
+	font-size: 3rem;
+	box-sizing: border-box;
+}
+.icon-cheveron-right-categorias {
+	right: -0.3rem !important;
+}
+.icon-cheveron-left-categorias {
+	left: -0.3rem !important;
+}

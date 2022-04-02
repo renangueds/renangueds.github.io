@@ -1,0 +1,34 @@
+.swiper-button-prev-novidades,
+.swiper-button-next-novidades {
+	display: none;
+}
+.novidades__ranking {
+	position: absolute;
+	top: 0;
+	margin-top: 0.626rem;
+	margin-left: 0.626rem;
+	font-family: var(--font-he-bold);
+	font-size: 1.25rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.swiper-button-prev-novidades {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 0;
+	}
+	.swiper-button-next-novidades {
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 0;
+		z-index: 2;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.novidades__ranking {
+		display: none;
+	}
+}
