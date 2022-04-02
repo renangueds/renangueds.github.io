@@ -29,19 +29,21 @@ const sr = ScrollReveal({
   duration: 2000,
   reset: true
 })
-sr.reveal('.title', { interval: 100 })
-sr.reveal('.home-title', { delay: 50 })
-sr.reveal('.home-cidade', { delay: 75 })
-sr.reveal('.home-social-icon', { interval: 250 })
-sr.reveal('.about-img', { interval: 150 })
-sr.reveal(' .title ', { delay: 100 })
-sr.reveal('.text', { delay: 150 })
-sr.reveal('.skills-data', { interval: 75 })
-sr.reveal('.work-contents', { interval: 50 })
-sr.reveal('.work-img', { interval: 150 })
-sr.reveal('.subtitle ', { interval: 50 })
-sr.reveal('.contact-text', { interval: 100 })
-sr.reveal('.button', { interval: 150 })
+sr.reveal('.title', { interval: 50 })
+sr.reveal('.home-title', { delay: 25 })
+sr.reveal('.home-cidade', { delay: 25 })
+sr.reveal('.home-social-icon', { interval: 125 })
+sr.reveal('.about-img', { interval: 75 })
+sr.reveal(' .title ', { delay: 50 })
+sr.reveal('.text', { delay: 75 })
+sr.reveal('.subtitle ', {})
+sr.reveal('.text', { delay: 25 })
+sr.reveal('.skills-data', { interval: 25 })
+sr.reveal('.work-contents', { interval: 25 })
+sr.reveal('.work-img', { interval: 75 })
+sr.reveal('.subtitle ', { interval: 25 })
+sr.reveal('.contact-text', { interval: 50 })
+sr.reveal('.button', { interval: 75 })
 
 /*  back to top button */
 window.onload = function () {
@@ -84,6 +86,7 @@ window.onload = function () {
       }
     }
   }
+  
   window.addEventListener('scroll', function () {
     backToTop(),
       changeColorBackToTopButton(),
