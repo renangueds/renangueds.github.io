@@ -86,12 +86,10 @@ window.onload = function () {
       }
     }
   }
+  
   window.addEventListener('scroll', function () {
     backToTop(),
       changeColorBackToTopButton(),
       activateMenuAtCurrentSection()
   })
 }
-
-
-
