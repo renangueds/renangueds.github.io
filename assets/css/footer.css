@@ -1,0 +1,37 @@
+.footer {
+    background-color: var(--four-color);
+    text-align: center;
+    font-weight: 2rem 0;
+    padding: 2rem 0;
+  }
+  
+  .footer-title {
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+  }
+  
+  .footer-title a {
+    color: var(--second-color);
+  }
+  
+  .footer-title a:hover {
+    color: var(--five-color);
+  }
+  
+  .footer-social {
+    margin-bottom: var(--mb-4);
+  }
+  
+  .footer-icon {
+    font-size: 1.5rem;
+    color: var(--second-color);
+    margin: 0 var(--mb-2);
+  }
+  
+  .footer-icon:hover {
+    color: var(--five-color);
+  }
+  
+  .footer p {
+    color: var(--second-color);
+  }

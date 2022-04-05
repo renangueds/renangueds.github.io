@@ -1,0 +1,120 @@
+
+.section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+  
+  .bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-4);
+  }
+  
+  .l-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--first-color);
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: var(--four-color);
+    color: var(--second-color);
+    padding: 0.75rem 2.5rem;
+    font-weight: var(--font-semi);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 25px rgba(14, 36, 10, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .button i {
+    margin-right: 1rem;
+  }
+  
+  .button:hover {
+    background-color: var(--five-color);
+  }
+  
+  .text {
+    color: var(--third-color);
+    line-height: 2;
+    font-size: var(--normal-font-size);
+  }
+  
+  .title {
+    color: var(--second-color);
+    font-size: var(--title-font-size);
+    margin-top: var(--mb-2);
+    margin-bottom: var(--mb-6);
+    text-align: center;
+  }
+  
+  .subtitle {  
+    color: var(--second-color);
+  }
+  
+  .back-to-top {
+    background: var(--four-color);
+    color: var(--second-color);
+    position: fixed;
+    margin-right: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.5rem;
+    clip-path: circle();
+    font-size: 1.5rem;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(100%);
+  }
+  
+  .back-to-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .back-to-top.show.add {
+    background: var(--second-color);
+    color: var(--four-color);  
+  }
+
+  @media (min-width: 768px) {    
+    .bd-grid {
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .section {
+      padding-bottom: 4rem;
+    }
+  
+  }
+  
+  @media (min-width: 1024px) { 
+    .bd-grid{
+      max-width: 1024px;
+    }
+  }
+  
+  
+  @media screen and (min-width: 1920px) {
+    .back-to-top { 
+      right: 1.5rem;
+      bottom: 1.5rem;
+    }
+  }
