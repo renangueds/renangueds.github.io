@@ -1,0 +1,21 @@
+.contact-container {
+  display: flex;
+}
+
+.contact-item{
+  padding: 2rem .5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .contact-container {
+    justify-items: center;
+  }
+  .contact-content {
+    display: flex;
+    text-align: center;
+  }
+  .contact-item{
+    padding: 0 2rem;
+  }
+}

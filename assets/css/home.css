@@ -1,0 +1,117 @@
+.home {
+    padding: 2rem 1rem;
+    height: calc(90vh - 43px);
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .home-data{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .home-title{
+    font-size: 3.5rem;
+    align-self: center;
+    padding-top: 1rem;
+    line-height: 4rem;
+  }
+  
+  .home-cidade {
+    font-size: 0.8rem;
+    writing-mode: vertical-rl;
+    align-self: flex-start;
+    width: fit-content;
+    height: max-content;
+  }
+  
+  .home-social {
+    flex-direction: column;
+    display: flex;
+    padding-bottom: .5rem;
+  }
+  
+  .home-social-icon {
+    font-size: 1.5rem;
+    color: var(--second-color);
+    align-self: flex-end;  
+    padding-top: 1rem;
+  }
+  
+  .home-social-icon:hover {
+    color: var(--five-color);
+  }
+
+  @media screen and (max-height: 400px) {
+    .home-title{
+      font-size: 3rem !important;
+      line-height: 3rem !important; 
+      padding: initial;
+    }  
+    
+    .home-social {
+      flex-direction: row !important;
+      align-self: flex-end !important;
+    }
+  
+    .home-social-icon{
+      margin-left: 1rem;
+    }
+  }
+
+@media (min-width: 768px) {
+
+  .home {
+    height: 90vh;
+  }
+  .home-title{
+    font-size: 7rem;
+    line-height: 7rem;
+  }
+
+}
+
+@media (min-width: 1024px) { 
+
+  .home {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .home-title{
+    padding-top: initial;
+  }
+
+  .home-cidade {
+    grid-column:1 / span 1 ;
+    font-size: var(--cidade-font-size);
+    align-self: flex-end;    
+    justify-self: flex-start;
+    padding-bottom: 3rem;
+  }
+
+  .home-data{
+    grid-column:2 / span 1 ;
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-content: end;
+    margin: 0 auto;
+  }
+
+  .home-social{    
+    grid-row:2 / span 1 ;
+    
+    align-self: flex-start;
+    padding-top: 7rem;
+    flex-direction: row;
+  }
+
+  .home-social-icon{
+    padding-right: 1rem;
+  }
+}
